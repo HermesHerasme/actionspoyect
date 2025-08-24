@@ -52,7 +52,7 @@ jobs:
           docker push ${{ env.IMAGE_NAME }}:${{ env.SHA_SHORT }}
           docker push ${{ env.IMAGE_NAME }}:${{ env.DATE }}
 
-      # 6️⃣ Trigger para desplegar la nueva imagen en rRender
+      # 6️⃣ Trigger para desplegar la nueva imagen en rrRender
       - name: Trigger Render deploy
         run: |
           # Se hace un POST a la API de Render usando el service ID y API Key
